@@ -11,7 +11,7 @@ README = (HERE / "README.md").read_text()
 setup(
     name='scurri_zipcode',
     packages=find_packages(include=['scurri_zipcode']),
-    version='0.1.2',
+    version='0.1.3',
     long_description=README,
     long_description_content_type="text/markdown",
     description='Python library to validate zip codes in the UK for Scurri interview',
