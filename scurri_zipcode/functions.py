@@ -6,4 +6,4 @@ UK_ZIP_CODE_REGEX = '^(([A-Z]{1,2}[0-9][A-Z0-9]?|ASCN|STHL|TDCU|BBND|[BFS]IQQ|' 
 
 
 def is_valid(zip_code):
-    return re.search(UK_ZIP_CODE_REGEX, zip_code)
+    return bool(re.search(UK_ZIP_CODE_REGEX, zip_code))
