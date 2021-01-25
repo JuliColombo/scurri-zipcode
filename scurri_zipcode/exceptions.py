@@ -1,0 +1,2 @@
+class ZipCodeException(Exception):
+    pass

@@ -22,3 +22,9 @@ class TestValidation:
 
     def test_zip_code_special_case_is_valid(self):
         assert is_valid('ASCN 1ZZ')
+
+    def test_zip_code_in_lowercase_is_valid(self):
+        assert is_valid('ec1a 1bb')
+
+    def test_zip_code_with_extra_whitespaces_is_invalid(self):
+        assert not is_valid('E C 1 A1 B B')
