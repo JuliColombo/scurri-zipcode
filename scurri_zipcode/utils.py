@@ -1,0 +1,22 @@
+# REGEX
+UK_ZIP_CODE_REGEX = '^(([A-Z]{1,2}[0-9][A-Z0-9]?|ASCN|STHL|TDCU|BBND|[BFS]IQQ|PCRN|TKCA) ?' \
+                    '[0-9][A-Z]{2}|BFPO ?[0-9]{1,4}|(KY[0-9]|MSR|VG|AI)[ -]?[0-9]{4}|[A-Z]{2} ?' \
+                    '[0-9]{2}|GE ?CX|GIR ?0A{2}|SAN ?TA1)$'
+FORBIDDEN_FIRST_LETTERS_OUTWARD_REGEX = '^[Q|V|X].*'
+FORBIDDEN_SECOND_LETTERS_OUTWARD_REGEX = '^.[I|J|Z].*'
+A9A_FORMAT_REGEX = '^[A-Z][0-9][A-Z].*'
+AA9A_FORMAT_REGEX = '^[A-Z]{2}[0-9][A-Z].*'
+AA9_FORMAT_REGEX = '^[A-Z]{2}[0-9].*'
+AA99_FORMAT_REGEX = '^[A-Z]{2}[0-9]{2}.*'
+LAST_OUTWARD_LETTERS_FOR_A9A_REGEX = '^.[0-9][A-H|J|K|P|S|T|U|W].*'
+LAST_OUTWARD_LETTERS_FOR_AA9A_REGEX = '^..[0-9][A|B|E|H|M|N|P|R|V|W|X].*'
+LAST_INWARD_LETTERS_REGEX = '.*[C|I|K|M|O|V][C|I|K|M|O|V]$'
+
+# AREA CODES
+ZERO_DISTRICT_AREAS = ['BL', 'BS', 'CM', 'CR', 'FY', 'HA', 'PR', 'SL', 'SS']
+DOUBLE_DIGIT_DISTRICT_AREAS = ['AB', 'LL', 'SO']
+SINGLE_DIGIT_DISTRICT_AREAS = ['BR', 'FY', 'HA', 'HD', 'HG', 'HR', 'HS', 'HX',
+                               'JE', 'LD', 'SM', 'SR', 'WC', 'WN', 'ZE']
+
+# LENGTHS
+INWARD_CODE_LENGTH = 3
