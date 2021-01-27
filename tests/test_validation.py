@@ -1,5 +1,3 @@
-import re
-
 from scurri_zipcode.functions import is_valid
 
 
